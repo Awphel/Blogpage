@@ -1,0 +1,183 @@
+
+/* 
+==========================================
+    DEFAULT STYLING
+==========================================
+*/
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .hr {
+        width: 100%;
+        height: .15rem;
+        background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
+    }
+    .button {
+        font-weight: bold;
+        font-size: 0.938rm;
+        line-height: 1.125rem;
+        text-align: center;
+        padding: 0.438rem 1.2rem;
+        margin-top: 1rem;
+        border: none;
+        width: 80%;
+    }
+    .button:hover{
+        opacity: .8;
+        cursor: pointer;
+    }
+    .button-cta {
+          box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
+            background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
+        color: white;
+    }
+    div {
+        font-style: normal;
+        font-family: Nunito;
+        line-height: 1.938rem;
+        }
+    .article h1 {
+        font-weight: bold;
+        font-size: 1.625rem;
+        color: #101010;
+        }
+    .article h2 {
+        font-weight: bold;
+        font-size: 1.125rem;
+        }
+    .article p {
+        margin-top: 1.5rem;
+    }
+    .article {
+        margin-top: 1rem;
+        margin-left: 5%;
+        padding: .5rem;
+        float: left;
+        width: 35rem;
+        }
+    .sidebar {
+        width: 16.875rem;
+        height: 40rem;
+        margin-top: 7.5rem;
+        margin-left: 5%;
+        padding-top: 2rem;
+        background: #F5F5F5;
+        justify-content: center;
+        text-align: center;
+        float: left;
+    }
+    .post_image{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+/*
+=================================
+ MODAL INPUT FIELDS STYLING
+=================================
+*/
+ input[type=email], input[type=password] {
+  width: 73.5%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: #FFFFFF;
+box-shadow: inset 0px 1px 5px rgba(142, 142, 142, 0.5);
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+mark.green {
+    color: green;
+    background: none;
+}
+ .modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background: #FFFFFF;
+    overflow-x: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    
+  }
+
+  .modal-header {
+    text-align: right;
+  }
+
+  .modal-header {
+    align-items: center;
+    text-align: center;
+    color: #848484;
+  }
+
+  .modal-body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    position: relative;
+    border-top: .045rem solid #E5424F;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;
+    width: 80%;
+  }
+
+  .btn-close {
+  float: right;
+    border: none;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #464646;
+    top: calc(50% - 46px/2 - 2px);
+    background: transparent;
+  }
+/*
+=====================================
+     STYLING FOR SMALLEER DISPLAYS 
+=====================================
+*/
+ 
+@media screen and (max-width: 1024px){
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .article {
+        margin-left: 0;
+    }
+    .modal {
+        width: 90%;
+    }
+    .sidebar{
+        margin-top: .5rem;
+    }
+}
